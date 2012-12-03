@@ -50,5 +50,13 @@ describe "train" do
       stack.pop.should == 1
     end
   end
+  describe "push and pop test" do
+    it "push and pop then size eq 0" do
+      stack.push(1)
+      stack.pop
+      stack.size.should == 0
+    end
+  end
+
 end
 
